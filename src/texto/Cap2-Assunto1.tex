@@ -1,0 +1,72 @@
+\chapter{Assunto Primeiro}
+
+\section{Seção do assunto primeiro}
+
+Formatando código inline \texttt{if / then / else} e \texttt{switch / case}.
+
+\subsection{Subseção da segunda seção}
+
+Como eu vou ficar quando acabar a monografia:
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.25]{awesome.png}}
+\caption{Awesome smile}
+\end{figure}
+
+\subsubsection{Sub Sub Seção}
+     
+Esse é o último nível possível das seções.
+
+Olha um texto em \textit{itálico} e um em \textbf{negrito}.
+
+
+\subsection{Lorem Ipsum Dolor}\label{sec:lorem}
+
+Nessa subseção tem uma label, olha no código, ela chama ``lorem''. Ah, e olha as aspas aqui do lado esquerdo.
+
+Para citação direta de até três linhas basta por entre aspas e usar o cite depois. Como diria o grande pensador,
+``Se tem alguma coisa que acaba com o meu dia, é a noite.'' \cite{tiririca2009dia}. Se não for uma citação direta basta não usar as aspas e usar o cite normalmente.
+
+Já para citação direta com três ou mais linhas use o begin citacao (olhe no código).
+
+\begin{citacao}
+``Nenhuma civilização nasceu sem ter acesso a uma forma básica de alimentação e aqui nós temos uma, como também os índios e os indígenas americanos têm a deles. Temos a mandioca e aqui nós estamos e, certamente, nós teremos uma série de outros produtos que foram essenciais para o desenvolvimento de toda a civilização humana ao longo dos séculos. Então, aqui, hoje, eu tô saudando a mandioca, uma das maiores conquistas do Brasil'' \cite{rousseff2015mandioca}.
+\end{citacao}
+
+\subsection{Usando a label}
+
+Como dito em \ref{sec:lorem}, ipsum dolor sit amet.
+
+ 
+\subsection{Escrevendo código}
+
+Um codiguinho:
+
+\begin{lstlisting}[caption=Classe dos animais]
+public class Animal {
+    private String tipo;
+    public Animal(String tipo) {
+        this.tipo = tipo;
+    }
+    public void fazerBarulho() {
+        if(tipo.equals("Cachorro")) {
+            System.out.println("Au! Au!")
+        }
+        else if(tipo.equals("Gato")) {
+            System.out.println("Miau!")
+        }
+        else if(tipo.equals("Galinha")) {
+            System.out.println("Pó pó pó");
+        }
+    }
+}
+\end{lstlisting}
+
+E uma caixa colorida:
+
+\begin{tcolorbox}
+Au! Au!\par
+Miau!\par
+Pó pó pó
+\end{tcolorbox} 
+ 

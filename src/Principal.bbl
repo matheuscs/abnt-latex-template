@@ -1,0 +1,21 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Rousseff 2015]{rousseff2015mandioca}
+\abntrefinfo{Rousseff}{ROUSSEFF}{2015}
+{ROUSSEFF, D. \emph{Estou saudando a mandioca}. [S.l.]: Presidential Press,
+  2015.  (Como não presifir um país).
+ISBN 9780122005503.}
+
+\bibitem[Tiririca 2009]{tiririca2009dia}
+\abntrefinfo{Tiririca}{TIRIRICA}{2009}
+{TIRIRICA. O que acaba com o meu dia.
+\emph{Congress World}, 2009.
+Dispon{\'\i}vel em: \url{https://goo.gl/WCmikc}. Acesso em: 06 de Outubro de
+  2015.}
+
+\end{thebibliography}

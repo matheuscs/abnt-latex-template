@@ -1,0 +1,114 @@
+% -----------------------------------------------------------------------------
+% Monografia
+% Juvenal Godofredo Matrícula 12345
+% Orientador: Prof. Dr. Sr. Exmo. 
+% -----------------------------------------------------------------------------
+\documentclass{abnt}
+
+% -----------------------------------------------------------------------------
+% Inserindo pacotes de configuração do projeto
+% -----------------------------------------------------------------------------
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{ae}				%% Font Encoding T1 (PDF)
+\usepackage{graphicx}		%% Incluso de graficos (DVI/PS)
+\usepackage{geometry}		%% Dimensoes do documento (DVI/PS)
+\usepackage{url}			%% Trata URLs, e-mails e paths
+\usepackage{verbatim}		%% Comentar blocos de texto
+\usepackage{listings}		%% packages para inserção de códigos
+\usepackage{color}
+\usepackage{nameref}
+\usepackage[bookmarksnumbered]{hyperref}
+\usepackage{bookmark}
+\usepackage[alf]{abntex2cite}
+\usepackage{chngcntr}		%% Permite mudar a numeração da Lista de Código (listings)
+\usepackage{float}			%% Evita que o texto a seguir de uma imagem pule para a frente
+\usepackage{tcolorbox}		%% Para usar o tcolorbox
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{numbers=left,
+  stepnumber=5,
+  firstnumber=1,
+  numberstyle=\tiny,
+  extendedchars=true,
+  breaklines=true,
+  frame=tb,
+  basicstyle=\footnotesize,
+  stringstyle=\ttfamily,
+  showstringspaces=false,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ó}{{\'o}}1
+}
+
+\graphicspath{{figuras/}}	%% Endereço das figuras
+
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de Códigos}
+
+\renewcommand{\ABNTchapterfont}{\fontfamily{cmr}\fontseries{b}\selectfont}
+\renewcommand{\ABNTsectionfont}{\fontfamily{cmr}\fontseries{b}}
+\renewcommand{\tituloformat}{\large\bfseries}
+
+
+\include{configuracao/hifenizacao}
+
+\begin{document}
+\counterwithout{lstlisting}{chapter}	%% Tira a numeração do capítulo do listings
+
+% -----------------------------------------------------------------------------
+% Pre textuais
+% -----------------------------------------------------------------------------
+\input{pretextual/Capa}					%% Capa e Folha de rosto
+\input{pretextual/Agradecimentos}		%% Agradecimentos
+\input{pretextual/Resumo}				%% Resumo
+\input{pretextual/Abstract}
+\listoffigures                    		%% Lista de figuras
+%\listoftables                     		%% Lista de tabelas
+%\include{ListaAbrev}             		%% Lista de abreviaturas
+										%% Lista de símbolos
+\lstlistoflistings						%% Lista de códigos
+\cleardoublepage
+\pdfbookmark{\contentsname}{Contents}	%% Sumário lateral do PDF
+\tableofcontents                  		%% Sumário
+%\makeindex
+
+
+% -----------------------------------------------------------------------------
+% Corpo da Monografia
+% -----------------------------------------------------------------------------
+
+\include{texto/Cap1-Introducao}
+\include{texto/Cap2-Assunto1}
+\include{texto/Cap3-Conclusao}
+
+% -----------------------------------------------------------------------------
+% Pós textuais
+% -----------------------------------------------------------------------------
+\bibliographystyle{abnt-alf}
+\bibliography{biblio}		%% Referencias
+%\appendix%aaa				%% Apendice
+%\input{Anexo}%aaa			%% Anexos
+%\input{Anexo2}%aaa
+%\input{Anexo3}%aaa
+
+
+
+\end{document}
+
