@@ -35,5 +35,5 @@ Caso você tenha adicionado bibliografias é necessário rodar com a opção "Bi
 
 Tentei colocar um exemplo para cada coisa no projeto, coisas como código, figuras, referências para dentro do documento mesmo, bibliografia, agradecimento, sumário, lista de figuras, hifenização e etc..
 
-O LaTeX é legal mas tem uns hackzinhos que tem que fazer de vez em quando, por exemplo para usar aspas use \`\` para sair ` “ ` e ` '' ` para ` ” `. Exemplo:  \`\`teste''  no .tex sairá  “teste” no pdf.
+O LaTeX é legal mas tem uns hackzinhos que tem que fazer de vez em quando, por exemplo para usar aspas use \`\` para que no documento fique: ` “ `, e ` '' ` para: ` ” `. Exemplo:  \`\`teste''  no .tex sairá  “teste” no pdf.
 
