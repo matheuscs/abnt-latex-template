@@ -15,7 +15,7 @@ PS: O número da versão e da arquitetura servem de exemplos e podem variar. Os 
 
 ## Editando o projeto
 
-Depois de tudo instalado, rode o arquivo Principal.tex, ele possui as configurações do projeto e ele também que carrega os demais .tex. Nunca abra os demais .tex diretamente pelo Texmaker, pois não faz muito sentido.
+Depois de tudo instalado, baixe o repositório para um local de sua preferência. Rode o arquivo Principal.tex, ele possui as configurações do projeto e ele também que carrega os demais .tex. Não inicie o projeto abrindo os demais .tex pois você estará abrindo apenas uma parte do projeto, e não ele como um todo..
 
 ## Adicionando dicionário em português
 
